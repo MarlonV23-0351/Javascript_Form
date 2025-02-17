@@ -46,6 +46,13 @@
 			
 			row3col1.append(inputSubmit);
 			
+			const studentForm = document.createElement("form");
+			studentForm.append(studentTable);
+			studentForm.action="create.php";
+			studentForm.method="POST";
+			
+			body = document.getElementsByTagName('body') [0];
+			body.append(studentForm);
 		</script>
 		
 	</body>
